@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Prozo-Web-Automation-Suite]">
+  <test name="Prozo Automation (failed)">
+    <classes>
+      <class name="com.prozo.cucumber.tests.RunCucumberFeatures">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="feature"/>
+        </methods>
+      </class> <!-- com.prozo.cucumber.tests.RunCucumberFeatures -->
+    </classes>
+  </test> <!-- Prozo Automation (failed) -->
+</suite> <!-- Failed suite [Prozo-Web-Automation-Suite] -->

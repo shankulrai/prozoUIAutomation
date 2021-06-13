@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="62.423724">
+<testcase classname="Verify createItems button in Item Sub menu" name="Verify That user should be able to click on the Create Item" time="12.721642">
+<system-out><![CDATA[Given User is logged in In portal using "ob","1234567890" and "ob"..........passed
+And User is on the Home Page................................................passed
+And Click on the items from left menu.......................................passed
+And Click on the items from items Submenu...................................passed
+Then User should be able to click on Create New Item button.................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Login for WCMS Portal" name="Verify that User should able to login with correct Username ,Domain and Password" time="5.335113">
+<system-out><![CDATA[Given User is on the Login page.............................................passed
+And Enter the "ob" name.....................................................passed
+And Click on the Continue button............................................passed
+When I check for the mobilenumber and password page.........................passed
+And Enter the "1234567890" and "ob".........................................passed
+And Click on the signin button..............................................passed
+Then User should be login into the WCMS portal..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify the negative Scenarios for Create Item Page" name="Verify That user should be not allowed to submit blank create Item form" time="7.33103">
+<system-out><![CDATA[Given User is logged in In portal using "ob","1234567890" and "ob"..........passed
+And Navigate to the Create Items Page.......................................passed
+Then submit the blank form user should not allowed to proceed further.......passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify the negative Scenarios for Create Item Page" name="Verifiy that char value should not be allowed in Hieght,wieght,length and breath filds" time="37.035939">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#client\-snackbar&quot;}&#10;  (Session info: chrome=91.0.4472.77)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'&#10;System info: host: 'Shankuls-MacBook-Pro.local', ip: 'fe80:0:0:0:1066:2147:2dd8:e33f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}), userDataDir=/var/folders/5_/519vp9ys5j501ft2nrspsy8w0000gn/T/.com.google.Chrome.BrCj5r}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52447}, acceptInsecureCerts=false, browserVersion=91.0.4472.77, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 4e78e0717bc1bb694c6cda2e29bd23e9&#10;*** Element info: {Using=id, value=client-snackbar}&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)&#10;&#9;at org.openqa.selenium.By$ById.findElement(By.java:218)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#10;&#9;at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)&#10;&#9;at com.prozo.cucumber.steps.CreateItemSteps.lambda$4(CreateItemSteps.java:40)&#10;&#9;at ✽.Then Error should be thrown(createItem.feature:22)&#10;"><![CDATA[Given User is logged in In portal using "ob","1234567890" and "ob"..........passed
+And Navigate to the Create Items Page.......................................passed
+And enter the char value should not be allowed in Hieght,wieght,length and breath filds.passed
+And Click on save button....................................................passed
+Then Error should be thrown.................................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#client\-snackbar"}
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'Shankuls-MacBook-Pro.local', ip: 'fe80:0:0:0:1066:2147:2dd8:e33f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}), userDataDir=/var/folders/5_/519vp9ys5j501ft2nrspsy8w0000gn/T/.com.google.Chrome.BrCj5r}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52447}, acceptInsecureCerts=false, browserVersion=91.0.4472.77, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 4e78e0717bc1bb694c6cda2e29bd23e9
+*** Element info: {Using=id, value=client-snackbar}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+	at com.prozo.cucumber.steps.CreateItemSteps.lambda$4(CreateItemSteps.java:40)
+	at ✽.Then Error should be thrown(createItem.feature:22)
+]]></failure>
+</testcase>
+</testsuite>

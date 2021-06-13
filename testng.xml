@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Prozo-Web-Automation-Suite">
+
+	<test name="Prozo Automation ">
+		<classes>
+			<class name="com.prozo.cucumber.tests.RunCucumberFeatures" />
+		</classes>
+	</test>
+</suite>

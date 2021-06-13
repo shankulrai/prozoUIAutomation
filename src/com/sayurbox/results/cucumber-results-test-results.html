@@ -1,0 +1,382 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+.passed_description {background-color:#D0FFD0;font-weight:bold;font-style:italic;color:black}
+.failed_description {background-color:#FFA898;font-weight:bold;font-style:italic;color:black}
+.comment {font-family:courier;font-weight:normal;font-size:small;color:black;border:1px dashed black;background-color:silver}
+.tip {font-family:courier;font-weight:normal;font-size:small;color:white;background-color:black}
+OL { counter-reset: item }
+OL>LI { display: block }
+OL>LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: auto;
+     @top-center {
+     	content: "Detailed Results Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+</style>
+<title>Detailed Results Report</title>
+<meta charset="UTF-8" />
+</head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+<h1>Overview</h1>
+
+
+<table>
+	<tr><th></th><th>Passed</th><th>Failed</th><th>Known</th><th>Undefined</th><th>Total</th><th>%Passed</th></tr>
+	<tr><th>Features</th>
+		<td class="passed" id="features_passed">3</td>
+		<td class="failed" id="features_failed">0</td>
+		<td class="known" id="features_known">0</td>
+		<td class="undefined" id="features_undefined">0</td>
+		<td id="features_total">3</td>
+		<td id="features_rate">
+				100%
+		</td>
+	</tr>
+	<tr><th>Scenarios</th>
+		<td class="passed" id="scenarios_passed">4</td>
+		<td class="failed" id="scenarios_failed">0</td>
+		<td class="known" id="scenarios_known">0</td>
+		<td class="undefined" id="scenarios_undefined">0</td>
+		<td id="scenarios_total">4</td>
+		<td id="scenarios_rate">
+				100%
+		</td>
+	</tr>
+	<tr><th>Steps</th>
+		<td class="passed" id="steps_passed">20</td>
+		<td class="failed" id="steps_failed">0</td>
+		<td class="known" id="steps_known">0</td>
+		<td class="undefined" id="steps_undefined">0</td>
+		<td id="steps_total">20</td>
+		<td id="steps_rate">
+				100%
+		</td>
+	</tr>
+</table>
+<div><b>Overall Duration: 0h 01m 34s</b></div>
+
+<a id="top"></a><h1>Table of Contents</h1>
+
+<ol>
+<li> <span class="passed"><a href="#feature-5verify-createitems-button-in-item-sub-menu">Verify createItems button in Item Sub menu</a></span>
+	<ol>
+        <li> <span class="passed"><a href="#sc-16-verify-createitems-button-in-item-sub-menu;verify-that-user-should-be-able-to-click-on-the-create-item;;2">Verify That user should be able to click on the Create Item</a></span></li>
+    </ol></li>
+<li> <span class="passed"><a href="#feature-6verify-login-for-wcms-portal">Verify Login for WCMS Portal</a></span>
+	<ol>
+        <li> <span class="passed"><a href="#sc-19-verify-login-for-wcms-portal;verify-that-user-should-able-to-login-with-correct-username-,domain-and-password;;2">Verify that User should able to login with correct Username ,Domain and Password</a></span></li>
+    </ol></li>
+<li> <span class="passed"><a href="#feature-6verify-the-negative-scenarios-for-create-item-page">Verify the negative Scenarios for Create Item Page</a></span>
+	<ol>
+        <li> <span class="passed"><a href="#sc-15-verify-the-negative-scenarios-for-create-item-page;verify-that-user-should-be-not-allowed-to-submit-blank-create-item-form;;2">Verify That user should be not allowed to submit blank create Item form</a></span></li>
+        <li> <span class="passed"><a href="#sc-26-verify-the-negative-scenarios-for-create-item-page;verifiy-that-char-value-should-not-be-allowed-in-hieght,wieght,length-and-breath-filds;;2">Verifiy that char value should not be allowed in Hieght,wieght,length and breath filds</a></span></li>
+    </ol></li>
+</ol>
+
+<h1>Detailed Results Report</h1>
+
+<table width="700px">
+	<tr class="passed"><td colspan="4"><b>Feature:</b> <a id="feature-5verify-createitems-button-in-item-sub-menu">Verify createItems button in Item Sub menu</a></td></tr>
+    <tr class="passed">
+    	<td><small><b>Passed:</b> 1</small></td>
+        <td><small><b>Failed:</b> 0</small></td>
+        <td><small><b>Undefined:</b> 0</small></td>
+        <td><small>Duration: 11.67s</small></td>
+    </tr>
+	<tr class="passed">
+		<td colspan="4" style="padding-left:20px">
+		<table width="100%">
+				<tr class="passed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-16-verify-createitems-button-in-item-sub-menu;verify-that-user-should-be-able-to-click-on-the-create-item;;2">Verify That user should be able to click on the Create Item</a>
+					</td>
+				</tr>
+                <tr class="passed">
+                	<td><small><b>Passed:</b> 5</small></td>
+                	<td><small><b>Failed:</b> 0</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 11.67s</small></td>
+				</tr>
+					<tr class="passed">
+						<td>Before</td>
+						<td colspan="2"></td>
+						<td width="100">9.36s</td>
+					</tr>
+                	<tr class="passed">
+                		<td colspan="4">
+                		</td>
+                	</tr>
+                <tr class="passed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>Given </b> User is logged in In portal using &quot;ob&quot;,&quot;1234567890&quot; and &quot;ob&quot;</td>
+                            		<td width="100">1.25s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User is on the Home Page</td>
+                            		<td width="100">0.60s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Click on the items from left menu</td>
+                            		<td width="100">0.04s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Click on the items from items Submenu</td>
+                            		<td width="100">0.13s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> User should be able to click on Create New Item button</td>
+                            		<td width="100">0.21s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+					<tr class="passed">
+						<td>After</td>
+						<td colspan="2"></td>
+						<td width="100">0.09s</td>
+					</tr>
+                	<tr class="passed">
+                		<td colspan="4">
+						</td>
+                	</tr>
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+		</table>
+	</td></tr><tr><td colspan="5"></td></tr>
+	<tr class="passed"><td colspan="4"><b>Feature:</b> <a id="feature-6verify-login-for-wcms-portal">Verify Login for WCMS Portal</a></td></tr>
+    <tr class="passed">
+    	<td><small><b>Passed:</b> 1</small></td>
+        <td><small><b>Failed:</b> 0</small></td>
+        <td><small><b>Undefined:</b> 0</small></td>
+        <td><small>Duration: 5.42s</small></td>
+    </tr>
+	<tr class="passed">
+		<td colspan="4" style="padding-left:20px">
+		<table width="100%">
+				<tr class="passed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-19-verify-login-for-wcms-portal;verify-that-user-should-able-to-login-with-correct-username-,domain-and-password;;2">Verify that User should able to login with correct Username ,Domain and Password</a>
+					</td>
+				</tr>
+                <tr class="passed">
+                	<td><small><b>Passed:</b> 7</small></td>
+                	<td><small><b>Failed:</b> 0</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 5.42s</small></td>
+				</tr>
+					<tr class="passed">
+						<td>Before</td>
+						<td colspan="2"></td>
+						<td width="100">3.26s</td>
+					</tr>
+                	<tr class="passed">
+                		<td colspan="4">
+                		</td>
+                	</tr>
+                <tr class="passed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>Given </b> User is on the Login page</td>
+                            		<td width="100">0.05s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Enter the &quot;ob&quot; name</td>
+                            		<td width="100">0.15s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Click on the Continue button</td>
+                            		<td width="100">0.53s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> I check for the mobilenumber and password page</td>
+                            		<td width="100">0.52s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Enter the &quot;1234567890&quot; and &quot;ob&quot;</td>
+                            		<td width="100">0.14s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Click on the signin button</td>
+                            		<td width="100">0.11s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> User should be login into the WCMS portal</td>
+                            		<td width="100">0.57s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+					<tr class="passed">
+						<td>After</td>
+						<td colspan="2"></td>
+						<td width="100">0.10s</td>
+					</tr>
+                	<tr class="passed">
+                		<td colspan="4">
+						</td>
+                	</tr>
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+		</table>
+	</td></tr><tr><td colspan="5"></td></tr>
+	<tr class="passed"><td colspan="4"><b>Feature:</b> <a id="feature-6verify-the-negative-scenarios-for-create-item-page">Verify the negative Scenarios for Create Item Page</a></td></tr>
+    <tr class="passed">
+    	<td><small><b>Passed:</b> 2</small></td>
+        <td><small><b>Failed:</b> 0</small></td>
+        <td><small><b>Undefined:</b> 0</small></td>
+        <td><small>Duration: 16.99s</small></td>
+    </tr>
+	<tr class="passed">
+		<td colspan="4" style="padding-left:20px">
+		<table width="100%">
+				<tr class="passed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-15-verify-the-negative-scenarios-for-create-item-page;verify-that-user-should-be-not-allowed-to-submit-blank-create-item-form;;2">Verify That user should be not allowed to submit blank create Item form</a>
+					</td>
+				</tr>
+                <tr class="passed">
+                	<td><small><b>Passed:</b> 3</small></td>
+                	<td><small><b>Failed:</b> 0</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 7.37s</small></td>
+				</tr>
+					<tr class="passed">
+						<td>Before</td>
+						<td colspan="2"></td>
+						<td width="100">4.31s</td>
+					</tr>
+                	<tr class="passed">
+                		<td colspan="4">
+                		</td>
+                	</tr>
+                <tr class="passed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>Given </b> User is logged in In portal using &quot;ob&quot;,&quot;1234567890&quot; and &quot;ob&quot;</td>
+                            		<td width="100">1.17s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Navigate to the Create Items Page</td>
+                            		<td width="100">1.48s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> submit the blank form user should not allowed to proceed further</td>
+                            		<td width="100">0.32s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+					<tr class="passed">
+						<td>After</td>
+						<td colspan="2"></td>
+						<td width="100">0.10s</td>
+					</tr>
+                	<tr class="passed">
+                		<td colspan="4">
+						</td>
+                	</tr>
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+				<tr class="passed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-26-verify-the-negative-scenarios-for-create-item-page;verifiy-that-char-value-should-not-be-allowed-in-hieght,wieght,length-and-breath-filds;;2">Verifiy that char value should not be allowed in Hieght,wieght,length and breath filds</a>
+					</td>
+				</tr>
+                <tr class="passed">
+                	<td><small><b>Passed:</b> 5</small></td>
+                	<td><small><b>Failed:</b> 0</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 9.62s</small></td>
+				</tr>
+					<tr class="passed">
+						<td>Before</td>
+						<td colspan="2"></td>
+						<td width="100">6.88s</td>
+					</tr>
+                	<tr class="passed">
+                		<td colspan="4">
+                		</td>
+                	</tr>
+                <tr class="passed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>Given </b> User is logged in In portal using &quot;ob&quot;,&quot;1234567890&quot; and &quot;ob&quot;</td>
+                            		<td width="100">0.84s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Navigate to the Create Items Page</td>
+                            		<td width="100">1.44s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> enter the char value should not be allowed in Hieght,wieght,length and breath filds</td>
+                            		<td width="100">0.21s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Click on save button</td>
+                            		<td width="100">0.15s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> Error should be thrown</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+					<tr class="passed">
+						<td>After</td>
+						<td colspan="2"></td>
+						<td width="100">0.10s</td>
+					</tr>
+                	<tr class="passed">
+                		<td colspan="4">
+						</td>
+                	</tr>
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+		</table>
+	</td></tr><tr><td colspan="5"></td></tr>
+</table>
+
+	</body>
+</html>

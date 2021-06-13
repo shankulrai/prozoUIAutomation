@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="34.104226">
+<testcase classname="Verify createItems button in Item Sub menu" name="Verify That user should be able to click on the Create Item" time="11.678656">
+<system-out><![CDATA[Given User is logged in In portal using "ob","1234567890" and "ob"..........passed
+And User is on the Home Page................................................passed
+And Click on the items from left menu.......................................passed
+And Click on the items from items Submenu...................................passed
+Then User should be able to click on Create New Item button.................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Login for WCMS Portal" name="Verify that User should able to login with correct Username ,Domain and Password" time="5.429134">
+<system-out><![CDATA[Given User is on the Login page.............................................passed
+And Enter the "ob" name.....................................................passed
+And Click on the Continue button............................................passed
+When I check for the mobilenumber and password page.........................passed
+And Enter the "1234567890" and "ob".........................................passed
+And Click on the signin button..............................................passed
+Then User should be login into the WCMS portal..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify the negative Scenarios for Create Item Page" name="Verify That user should be not allowed to submit blank create Item form" time="7.374615">
+<system-out><![CDATA[Given User is logged in In portal using "ob","1234567890" and "ob"..........passed
+And Navigate to the Create Items Page.......................................passed
+Then submit the blank form user should not allowed to proceed further.......passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify the negative Scenarios for Create Item Page" name="Verifiy that char value should not be allowed in Hieght,wieght,length and breath filds" time="9.621821">
+<system-out><![CDATA[Given User is logged in In portal using "ob","1234567890" and "ob"..........passed
+And Navigate to the Create Items Page.......................................passed
+And enter the char value should not be allowed in Hieght,wieght,length and breath filds.passed
+And Click on save button....................................................passed
+Then Error should be thrown.................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
